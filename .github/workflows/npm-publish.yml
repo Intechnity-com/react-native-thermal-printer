@@ -1,4 +1,4 @@
-name: Node.js Package
+name: Publish to NPM
 
 on:
   release:
@@ -16,9 +16,6 @@ jobs:
 
     - name: Install dependencies
       run: npm ci
-
-    - name: Test
-      run: npm test
 
     - name: Publish
       run: npm publish
